@@ -1,3 +1,22 @@
+html body {
+    background-color: transparent; 
+    background-image: url("../images/blueBackground.jpg");
+    background-size: cover;
+}
 .endScreen {
     display: none;
 }
+
+h1 {
+    text-align: center;
+}
+
+#dragon {
+    height:300px;
+    width: 300px;
+}
+
+.center {
+    padding-left: 200px;
+}
+

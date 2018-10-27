@@ -8,17 +8,18 @@ var wrong = 0;
       intervalId = setInterval(decrement, 1000);
       correct = 0;
       wrong = 0;
+      number = 60;
     }
 
     function decrement() {
       number--;
 
-      $("#countdown").html(number);
+      $("#countdown").text(number);
 
       if (number === 0) {
         stop();
 
-        alert("Time Up!");
+        alert("Out of Time!");
       }
     }
 
@@ -27,6 +28,7 @@ var wrong = 0;
       $(".gameScreen").hide();
       $(".endScreen").show();
   
+
       clearInterval(intervalId);
     }
 
@@ -47,10 +49,16 @@ var wrong = 0;
         } else{
           wrong++;
         }
+
+        if ($('input[name=question3]:checked').val() == "4") {
+          correct++;
+        } else{
+          wrong++;
+        }
       
 
-      $("#correct").html("<h3>Questions Correct: " + correct + "</h3>");
-      $("#wrong").html("<h3>Questions Wrong: " + wrong +"</h3>");
+      $("#correct").html("<h4>Questions Correct: " + correct + "</h4>");
+      $("#wrong").html("<h4>Questions Wrong: " + wrong +"</h4>");
     });
 
     $("#playAgain").click(function(){

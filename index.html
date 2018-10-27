@@ -14,39 +14,65 @@
     
 
     <div class="container gameScreen">
-    <h1>Nudibranch Trivia!</h1>
-    <div>Time Remaining: <span id="countdown"></span> seconds</div>
-        <form id="triviaForm">
-            <ol>
-                <li>What is a nudibranch?</li>
-                    <ul>
-                        <li><input type="radio" id="question1" name="question1" value="1">A plant limb that is green<br></li>
-                        <li><input type="radio" id="question1" name="question1" value="2"> A rock hollow created by water currents<br></li>
-                        <li><input type="radio" id="question1" name="question1" value="3"> A slug-link sea creature</li>  <!--Correct answer-->
-                        <li><input type="radio" id="question1" name="question1" value="4"> A small colony that splits off from a beehive</li>
-                    </ul>
-                </li>
-            </ol>
-            <ol>
-                <li>Some nudibranchs can store poison which they obtain from eating toxic prey?</li>
-                    <ul>
-                        <li><input type="radio" id="question2" name="question2" value="true"> True<br></li> <!--Correct answer-->
-                        <li><input type="radio" id="question2" name="question2" value="false"> False<br></li>
-                       
-                    </ul>
-                </li>
-            </ol>
-            <input type="submit" value="Submit">
+        <h1>Nudibranch Trivia!</h1>
+        <hr>
+        <div><h4>Time Remaining: <span id="countdown">60</span> seconds</h4></div>
+        <hr>
+            <div class="jumbotron">
+                <form id="triviaForm">
+                    <ol>
+                        <li><h4>What is a nudibranch?</h4></li>
+                            <ul>
+                                <li><input type="radio" id="question1" name="question1" value="1"> A plant limb that is green</li>
+                                <li><input type="radio" id="question1" name="question1" value="2"> A rock hollow created by water currents</li>
+                                <li><input type="radio" id="question1" name="question1" value="3"> A slug-link sea creature</li>  <!--Correct answer-->
+                                <li><input type="radio" id="question1" name="question1" value="4"> A small colony that splits off from a beehive</li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <ol>
+                        <li><h4>Some nudibranchs can store poison which they obtain from eating toxic prey?</h4></li>
+                            <ul>
+                                <li><input type="radio" id="question2" name="question2" value="true"> True</li> <!--Correct answer-->
+                                <li><input type="radio" id="question2" name="question2" value="false"> False</li>
+                            
+                            </ul>
+                        </li>
+                    </ol>
+                    <ol>
+                            <li><h4>Nudibranchs...</h4></li>
+                                <ul>
+                                    <li><input type="radio" id="question3" name="question3" value="1"> Live for more than 10 years</li>
+                                    <li><input type="radio" id="question3" name="question3" value="2"> Lay eggs</li>
+                                    <li><input type="radio" id="question3" name="question3" value="3"> Have great eye sight</li>  
+                                    <li><input type="radio" id="question3" name="question3" value="4"> Can become solar powered by eating algae</li> <!--Correct answer-->
+                                </ul>
+                            </li>
+                        </ol>
+                    <input type="submit" value="Submit" class="btn btn-primary">
+                    
+                </form>
+            </div>
+    </div>
             
-        </form>
-    </div>
-    
     <div class="container endScreen">
-        <div id="correct"></div>
-        <div id="wrong"></div>
-        
-        <input type="button" id ="playAgain" value="Play Again">
+        <h1>Nudibranch Trivia!</h1>
+        <hr>
+        <div class="jumbotron">
+            <div class="row center">
+                <div class="col-lg-6">
+                    <div id="correct"></div><br>
+                    <div id="wrong"></div><br><br>
+                    <!-- <hr>         -->
+                    <input type="button" id ="playAgain" value="Play Again" class="btn btn-primary">
+                </div>
+                <div class="col-lg-6">
+                    <img src="assets/images/blueDragon.jpg" id="dragon">
+                </div>
+            </div>
+        </div>
     </div>
+            
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/javascript/app.js"></script>
